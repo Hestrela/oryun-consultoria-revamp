@@ -208,6 +208,7 @@ body {
 .step-card {
     background-color: var(--cor-texto-claro);
     width: 238px;
+    max-width: 100%;
     height: 281px;
     border-radius: 15px;
     display: flex;
@@ -243,10 +244,12 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 50px;
 }
 
 .about-us-image {
     width: 60%;
+    max-width: 2000px;
     height: auto;
 }
 
@@ -258,6 +261,7 @@ body {
 
 .about-us-text {
     width: 40%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,5 +276,39 @@ body {
 .about-us-text > h3 {
     color: var(--cor-texto-claro);
     font-size: 20px;
-    
+}
+
+.services {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px
+}
+
+.question-card {
+    width: 40%;
+    max-width: 800px;
+    height: 322px;
+    background-color: var(--cor-texto-escuro);
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.question-card > h1 {
+    width:60%;
+    height: 70%;
+    font-size: 44px;
+    margin-left: 40px;
+}
+
+.service-card {
+    width: 60%;
+    height: 322px;
+    background-color: #6A8595;
+    border-radius: 15px;
+    color: #FFF;
 }
