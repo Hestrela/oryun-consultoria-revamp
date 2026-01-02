@@ -1,3 +1,9 @@
+:root {
+    --cor-fundo: #CCD3D9;
+    --cor-texto-escuro: #1C282E;
+    --cor-texto-claro: #2B4C5D;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,12 +12,13 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
 }
 
 .header {
-    background-color: #1C282E;
+    background-color: var(--cor-texto-escuro);
     height: 70px;
     width: 100%;
     display: flex;
@@ -164,25 +171,27 @@ body {
 
 .steps-section {
     width: 85%;
-    height: 300px;
+    height: auto;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
 
 .steps-list {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     list-style: none;
     color: #FFF;
-    gap: 40px;
+    justify-content: space-between;
     margin-top: -20px;
-    z-index: 2;
-    
+    z-index: 2;    
 }
 
 .intro-card {
-    background-color: #1C282E;
+    background-color: var(--cor-texto-escuro);
     width: 238px;
     height: 281px;
     border-radius: 15px;
@@ -197,7 +206,7 @@ body {
 }
 
 .step-card {
-    background-color: #2B4C5D;
+    background-color: var(--cor-texto-claro);
     width: 238px;
     height: 281px;
     border-radius: 15px;
@@ -205,19 +214,18 @@ body {
     font-size: 20px;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    justify-content: space-around;
 }
 
 .step-card > img {
     width: 50px;
     height: auto;
-    position: absolute;
+    position: relative;
     margin-top: 10px;
     margin-left: -140px;
 }
 
 .step-card > h3 {
-    margin-top: 80px;
     width: 80%;
     font-size: 30px;
 }
@@ -225,4 +233,44 @@ body {
 .step-card > p {
     width: 80%;
     font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about-us {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-us-image {
+    width: 60%;
+    height: auto;
+}
+
+.about-us-image > img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.about-us-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-us-text > h1 {
+    color: var(--cor-texto-escuro);
+    font-size: 36px;
+}
+
+.about-us-text > h3 {
+    color: var(--cor-texto-claro);
+    font-size: 20px;
+    
 }
