@@ -179,6 +179,26 @@ button:hover {
     font-weight: normal;
 }
 
+/* EFEITO DE DIGITAÇÃO */
+
+/* Essa classe será adicionada pelo Javascript enquanto estiver digitando */
+.digitando::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscar 0.7s infinite;
+    color: #FFF; /* Ou use white/orange */
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 .manual-navigation {
     position: absolute;
     width: 100%;
