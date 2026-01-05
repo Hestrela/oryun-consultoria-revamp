@@ -14,7 +14,7 @@
 body {
     width: 100%;
     min-height: 100dvh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'League Spartan', 'Libre Franklin';
     background-color: var(--cor-fundo);
 }
 
@@ -176,6 +176,7 @@ button:hover {
     width: 100%;
     font-size: 20px;
     font-weight: normal;
+    font-family: "Libre Franklin";
 }
 
 /* EFEITO DE DIGITAÇÃO */
@@ -293,6 +294,7 @@ button:hover {
     align-items: center;
     justify-content: space-around;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+    font-family: "Libre Franklin";
 }
 
 .step-card > img {
@@ -310,7 +312,7 @@ button:hover {
 
 .step-card > p {
     width: 80%;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
@@ -358,7 +360,9 @@ button:hover {
 
 .about-us-text > h3 {
     color: var(--cor-texto-claro);
+    font-family: "Libre Franklin";
     font-size: 20px;
+    font-weight: normal;
 }
 
 .services {
@@ -367,7 +371,8 @@ button:hover {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 40px
+    gap: 40px;
+    padding-bottom: 50px;
 }
 
 .question-card {
@@ -379,12 +384,13 @@ button:hover {
     color: #fff;
     display: flex;
     align-items: center;
+    
 }
 
 .question-card > h1 {
     width:60%;
-    height: 70%;
-    font-size: 44px;
+    height: auto;
+    font-size: 48px;
     margin-left: 40px;
 }
 
@@ -411,6 +417,44 @@ button:hover {
 
 .service-card > h3 {
     width: 80%;
-    font-size: 22px;
+    font-family: "Libre Franklin";
+    font-size: 24px;
     font-weight: normal;
+}
+
+.our-team {
+    width: 70%;
+    height: 322px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.our-team > h1 {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.our-team-photos {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-team-photos > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.our-team-photos > li > img {
+    width: 170px;
+    height: 170px;
+    border-radius: 85px;
+    margin-bottom: 10px;
 }
