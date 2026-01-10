@@ -91,7 +91,7 @@ button:hover {
 .nav_buttons > ul > li > a:hover::after {
     width: 100%;
     border: solid 1px var(--cor-fundo);
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.3s;
 }
 
 .nav_social_icons {
@@ -457,4 +457,11 @@ button:hover {
     height: 170px;
     border-radius: 85px;
     margin-bottom: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.our-team-photos > li > img:hover {
+    transform: translateY(-12px);
+    box-shadow: 0px 10px 14px 0 rgba(0,0,0,0.3);
+    transition: ease 0.5s;
 }
