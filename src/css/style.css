@@ -396,7 +396,7 @@ button:hover {
 
 .service-card {
     width: 60%;
-    height: 322px;
+    height: auto;
     background-color: #6A8595;
     border-radius: 15px;
     color: #FFF;
@@ -424,7 +424,7 @@ button:hover {
 
 .our-team {
     width: 70%;
-    height: 322px;
+    height: auto;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
@@ -464,4 +464,23 @@ button:hover {
     transform: translateY(-12px);
     box-shadow: 0px 10px 14px 0 rgba(0,0,0,0.3);
     transition: ease 0.5s;
+}
+
+.blog-section {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.blog-section > h1 {
+    font-size: 40px;
+}
+
+.blog-section > button {
+    width: 171px;
+    height: 68px;
 }
