@@ -474,6 +474,7 @@ button:hover {
     flex-direction: column;
     gap: 25px;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .blog-section > h1 {
@@ -483,4 +484,48 @@ button:hover {
 .blog-section > button {
     width: 171px;
     height: 68px;
+}
+
+.social-cards-section {
+    width: 70%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.social-cards-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.social-cards {
+    width: 228px;
+    height: 211px;
+    background-color: #2B4C5D;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.social-cards > h3 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.social-cards > p {
+    font-family: 'Libre Franklin';
+}
+
+.social-cards:hover {
+    transform: translateY(-12px);
+    box-shadow: 0px 10px 14px 0 rgba(0,0,0,0.3);
+    transition: ease 0.5s;
 }
