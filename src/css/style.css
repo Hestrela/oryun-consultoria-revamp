@@ -443,6 +443,7 @@ button:hover {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .our-team-photos > li {
@@ -544,4 +545,108 @@ button:hover {
 .rodape > h3 {
     font-weight: normal;
     font-size: 20px;
+}
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+@media (max-width: 930px) {
+    
+    /* 1. Ajuste do Header (pode simplificar ou esconder o menu depois) */
+    .header {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .nav_logo { margin-left: -20px; }
+
+    .nav_buttons > ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .nav_social_icons { margin-right: -5px; }
+
+    .slider {
+        height: 100%;
+    }
+
+    /* 2. Hero Texto */
+    .texto {
+        width: 70%; /* Aumenta largura do texto no celular */
+        margin-left: 5%; /* Tira aquela margem gigante da esquerda */
+    }
+    .texto h2 { font-size: 22px; } /* Diminui a fonte */
+
+    .texto h3 { font-size: 14px;}
+
+    .manual-navigation { margin-top: -50px; }
+
+    /* 3. Empilhar Seções (Transforma lado-a-lado em um-embaixo-do-outro) */
+    .about-us, 
+    .services, 
+    .steps-list {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Remove altura fixa se houver */
+    }
+
+    /* 4. Larguras Mobile */
+    .about-us-image, 
+    .about-us-text,
+    .question-card,
+    .service-card,
+    .blog-section,
+    .social-cards-section,
+    .our-team {
+        width: 90%; /* Ocupa quase toda a tela */
+        text-align: center; /* Centraliza texto */
+    }
+
+    .about-us-text {
+        gap: 20px
+    }
+
+    .question-card { align-items: center; height: 322px; }
+
+    .question-card > h1 { 
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        height: 322px;
+    }
+
+    .service-card > h1 {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .service-card > h3 {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    /* 5. Ajuste dos Cards de Passos */
+    .step-card, .intro-card {
+        width: 100%; /* Card ocupa largura total no mobile */
+        margin-bottom: 20px;
+    }
+
+    /* 6. Ajuste Social Cards */
+    .social-cards-list {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+
+    .rodape > h3 {
+        width: 80%;
+    }
 }
