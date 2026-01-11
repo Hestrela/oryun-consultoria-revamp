@@ -16,6 +16,7 @@ body {
     min-height: 100dvh;
     font-family: 'League Spartan', 'Libre Franklin';
     background-color: var(--cor-fundo);
+    overflow-x: hidden;
 }
 
 button {
