@@ -200,6 +200,7 @@ button:hover {
     }
 }
 
+
 .manual-navigation {
     position: absolute;
     width: 100%;
@@ -238,6 +239,39 @@ button:hover {
 
 .first {
     transition: margin-left 0.8s ease-in-out; /* Adicione isso */
+}
+
+.navigation-auto div {
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-button1 {
+    background-color: #FFF;
+}
+
+#radio2:checked ~ .navigation-auto .auto-button2 {
+    background-color: #FFF;
+}
+
+#radio3:checked ~ .navigation-auto .auto-button3 {
+    background-color: #FFF;
 }
 
 .steps-section {
