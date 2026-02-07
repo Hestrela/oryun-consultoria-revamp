@@ -84,7 +84,7 @@ button:hover {
 .nav_buttons > ul > li > a::after{
     content: '';
     position: relative;
-    border: none;
+    border: 1px;
     width: 0;
     margin-top: 5px;
 }
@@ -312,9 +312,9 @@ button:hover {
 }
 
 .intro-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0px 10px 14px 0 rgba(0,0,0,0.3);
-    transition: ease 0.5s;
+    transform: translateY(-12px)!important;
+    box-shadow: 0px 10px 14px 0 rgba(0,0,0,0.3)!important;
+    transition: ease 0.5s!important;
 }
 
 .step-card {
@@ -352,9 +352,9 @@ button:hover {
 }
 
 .step-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0px 10px 14px 0 rgba(0,0,0,0.3);
-    transition: ease 0.5s;
+    transform: translateY(-12px)!important;
+    box-shadow: 0px 10px 14px 0 rgba(0,0,0,0.3)!important;
+    transition: ease 0.5s!important;
 }
 
 .about-us {
