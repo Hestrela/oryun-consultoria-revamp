@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/Hestrela/oryun-consultoria-revamp#readme",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "tailwindcss": "^4.1.18"
+    "@tailwindcss/cli": "^4.1.18"
   }
 }
