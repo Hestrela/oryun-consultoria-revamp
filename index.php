@@ -1,10 +1,9 @@
 <?php
     require_once 'config.php';
     
-    include 'src/componentes/header.php'
+    include 'src/componentes/header.php';
     
 ?>
-<body>
 
     <div class="slider">
 
