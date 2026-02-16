@@ -1,9 +1,11 @@
+<?php require_once '../../config.php'; ?>
+
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,14 +17,14 @@
     <body>
 
         <header class="header">
-                <a href="index.php" class="nav_logo">
-                    <img src="src/img/Oryun Consultoria logo horizontal.png" alt="Oryun Consultoria">
+                <a href="<?php echo BASE_URL; ?>index.php" class="nav_logo">
+                    <img src="<?php echo BASE_URL; ?>src/img/Oryun Consultoria logo horizontal.png" alt="Oryun Consultoria">
                 </a>
 
                 <nav class="nav_buttons">
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="<?php echo BASE_URL; ?>index.php">Início</a></li>
+                        <li><a href="<?php echo BASE_URL; ?>src/pages/sobre.php">Sobre</a></li>
                         <li><a href="#">Serviços</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Fale Conosco</a></li>
