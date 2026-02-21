@@ -22,7 +22,7 @@ Este projeto é uma refatoração completa (revamp) de uma plataforma web desenv
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/Hestrela/oryun-consultoria-revamp.git](https://github.com/Hestrela/oryun-consultoria-revamp.git)
+    git clone https://github.com/Hestrela/oryun-consultoria-revamp.git
     ```
 2.  **Instale as dependências via Composer:**
     ```bash
